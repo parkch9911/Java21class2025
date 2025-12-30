@@ -1,0 +1,35 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class IfEx05 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int money=0;
+			System.out.print("금액을 입력하시오 >> ");
+		money = scan.nextInt();
+		int fiveman = money/50000;
+			System.out.println("오만원권 : " + fiveman +"매");
+		int fivemanleft = money%50000;
+		int oneman = fivemanleft/10000;
+			System.out.println("일만원권 : " + oneman +"매");
+		int onemanleft = fivemanleft%10000;
+		int fivecheon = onemanleft/5000;
+			System.out.println("오천원권 : " + fivecheon +"매");
+		int fivecheonleft = fivemanleft%5000;
+		int onecheon = fivecheonleft/1000;
+			System.out.println("일천원권 : " + onecheon +"매");
+		int onecheonleft = fivemanleft%1000;
+		int fivebek = onecheonleft/500;
+			System.out.println("오백원권 : " + fivebek +"매");
+		int fivebekleft = fivemanleft%500;
+		int onebek = fivebekleft/100;
+			System.out.println("일백원권 : " + onebek +"매");
+		int onebekleft = fivebekleft%100;
+			System.out.println("잔돈 : " + onebekleft+"원");
+		
+			
+	}
+
+}

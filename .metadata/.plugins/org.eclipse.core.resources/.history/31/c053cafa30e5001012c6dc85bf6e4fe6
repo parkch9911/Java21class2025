@@ -1,0 +1,36 @@
+package ifexample;
+
+public class Switchtest {
+
+	public static void main(String[] args) {
+		
+		char grade = 'C'; //대소문자 구분 함
+		switch(grade) {
+		case 'A' : System.out.println("VVIP 혜택");break;
+		case 'B' : System.out.println("VIP 혜택");break;
+		case 'C' : System.out.println("우수 혜택");break;
+		case 'D' : System.out.println("일반 혜택");break;
+		default : System.out.println("혜택이 없습니다.");
+		}
+		//switch문 안에 if문을 넣을 수 있음 case 'b' : if(){}~
+		
+		
+		int value = 123;
+		System.out.printf("상품의 가격은 %d\n", value);
+		System.out.printf("상품의 가격은 %6d\n", value);
+		// System.out.printf("상품의 가격은 %-06d\n", value); // -0 사용 금지 자연수는 음수 X
+		
+		String name = "홍길동";
+		int age = 30;
+		double score = 92.411;
+		double sum = 158/3;
+		System.out.printf("이름은 %s이고, 나이는 %d인 학생의 점수는 %.1f점 입니다.",name,age,sum);
+		
+		
+		
+		
+		
+		
+	}
+
+}

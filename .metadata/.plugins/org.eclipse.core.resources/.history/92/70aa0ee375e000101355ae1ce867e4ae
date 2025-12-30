@@ -1,0 +1,16 @@
+package example;
+
+public class OperateEx03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int kor = 100;
+		int eng = 87;
+		int math = 41;
+		int avg = (kor+eng+math)/3;
+		System.out.println(avg);
+		
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class IfEx03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int score = 0;
+		System.out.println("성적을 입력하세요(0~100) : ");
+		
+		
+	}
+
+}

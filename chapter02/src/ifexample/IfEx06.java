@@ -1,0 +1,29 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class IfEx06 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int money=0;
+			System.out.print("금액을 입력하시오 >> ");
+		money = scan.nextInt();
+		int fiveman = money/50000; //5만원권 매수
+		int fivemanleft = money%50000; //5만원권 제외 잔돈
+		int oneman = fivemanleft/10000; //1만원권 매수
+		int onemanleft = fivemanleft%10000; //1만원권 제외 잔돈
+		int fivecheon = onemanleft/5000; //5천원권 매수
+		int fivecheonleft = fivemanleft%5000; //5천원권 제외 잔돈
+		int onecheon = fivecheonleft/1000; //1천원권 매수
+		int onecheonleft = fivemanleft%1000; //1천원권 제외 잔돈
+		int fivebek = onecheonleft/500; //5백원권 매수
+		int fivebekleft = fivemanleft%500; //5백원권 제외 잔돈
+		int onebek = fivebekleft/100; //1백원권 매수
+		int onebekleft = fivebekleft%100; //1백원권 제외 잔돈
+			System.out.printf("오만원권 %d매%n일만원권 %d매%n오천원권 %d매%n일천원권 %d매%n오백원권 %d매%n일12백원권 %d매%n잔돈 %d원%n",
+					fiveman,oneman,fivecheon,onecheon,fivebek,onebek,onebekleft);
+			
+	}
+
+}

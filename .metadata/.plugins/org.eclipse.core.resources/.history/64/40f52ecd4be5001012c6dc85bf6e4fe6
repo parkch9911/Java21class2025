@@ -1,0 +1,14 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class IfEx04 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int tall = 0;
+		System.out.println("키(cm)를 입력하세요 : ");
+
+	}
+
+}

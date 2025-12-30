@@ -1,0 +1,16 @@
+package ifexample;
+
+import java.util.Scanner;
+
+public class IfEx01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int dbId = 1234;
+		int dbPw = 1111; 
+		System.out.println("ID 입력 : ");
+		System.out.println("PW 입력 : ");
+	}
+
+}
