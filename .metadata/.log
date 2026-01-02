@@ -1329,3 +1329,1489 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2025-12-31 18:07:36.243
 !MESSAGE No proxy data found for url: https://live.codetogether.io/ct-url
+!SESSION 2026-01-02 09:34:25.913 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 09:34:29.314
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 09:34:34.163
+!MESSAGE Logback config file: C:\JavaClass\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-01-02 09:34:40.990
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2026-01-02 09:34:43.152
+!MESSAGE No proxy data found for url: https://live.codetogether.io/ct-url
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 10:56:55.853
+!MESSAGE AbortCompilation computing hover information in Arrtest01.java at offset 1618
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11610)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:12005)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11946)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10333)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1424)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:794)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:712)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:704)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 60 :
+-----
+		str2 = Arrays.copyOf(str, str.length);
+		
+		
+		for(int k=0; k < str.length; k++) {
+			// 객체형 배열의 초기값을 지정하지 않으면 null 출력
+			// str 이 null 이면 "난 배열값"으로 출력하고,
+			// null 이 아니면 자기 값 출력
+			// String 객체는 비교할때 equals()를 사용해야 하지만
+			// 문제는 null 이 객체가 아니므로 메서드 사용 못함
+			if(str[k]==null) {
+				System.out.|println("난 배열값");
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 12:38:01.493
+!MESSAGE AbortCompilation computing hover information in ArrEx03.java at offset 455
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11610)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:12005)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11946)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10333)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1424)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:794)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:712)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:704)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 20 :
+-----
+		int idx; //인덱스 번호 몇번인지
+		int a = 0; // 그 값 가지고나올거
+		Scanner scan = new Scanner(System.in);
+		System.out.print("인덱스 입력 : ");
+		idx = scan.nextInt();
+		for(int i =0; i<arr.length; i++) {
+			if(idx == arr[i]) {
+				a = a + arr[i];
+			}
+		}
+		System.out.|println("점수 : "+ a);
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 12:43:30.515
+!MESSAGE AbortCompilation computing hover information in ArrEx03.java at offset 280
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11610)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:12005)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11946)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10333)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1424)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:794)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:712)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:704)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 13 :
+-----
+import java.util.*;
+
+public class ArrEx03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = {87, 11, 45, 98, 23};
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("인덱스 입력 : ");
+		idx = scan.|nextInt();
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 13:14:05.821
+!MESSAGE AbortCompilation computing hover information in ArrEx05.java at offset 548
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11610)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:12005)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11946)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10333)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1424)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:794)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:712)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:704)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 25 :
+-----
+			if(check == 0) {
+				if(x == hakbuns[i]) {
+					check++;
+					
+				}
+				if(check == 1) {
+					System.out.println(scores[i]);
+				}
+			}
+		}if(check == 0 ) {
+			|System.out.println("학번이 없음.");
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+!SESSION 2026-01-02 14:41:44.022 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 14:41:45.935
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 14:41:50.573
+!MESSAGE Logback config file: C:\JavaClass\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-01-02 14:41:55.351
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2026-01-02 14:41:57.234
+!MESSAGE No proxy data found for url: https://live.codetogether.io/ct-url
+!SESSION 2026-01-02 14:46:33.491 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 14:46:35.360
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 14:46:39.785
+!MESSAGE Logback config file: C:\JavaClass\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-01-02 14:46:45.685
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2026-01-02 14:46:47.649
+!MESSAGE No proxy data found for url: https://live.codetogether.io/ct-url
+!SESSION 2026-01-02 15:06:56.865 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 15:06:58.711
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 15:07:05.106
+!MESSAGE Logback config file: C:\JavaClass\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-01-02 15:07:10.846
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2026-01-02 15:07:12.763
+!MESSAGE No proxy data found for url: https://live.codetogether.io/ct-url
+!SESSION 2026-01-02 15:10:54.452 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 15:10:56.295
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 15:11:00.774
+!MESSAGE Logback config file: C:\JavaClass\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-01-02 15:11:06.523
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2026-01-02 15:11:08.475
+!MESSAGE No proxy data found for url: https://live.codetogether.io/ct-url
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 15:55:32.532
+!MESSAGE AbortCompilation computing hover information in ArrMovie.java at offset 1466
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11610)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:12005)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11946)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10333)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1424)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:794)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:712)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:704)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 52 :
+-----
+					
+				}else if(people>0 && seatNum>0) {  	// 인원수 지정, 좌석 선택 하면 
+												   	//그럼 이미 예매됐다는 예외처리도 이 안에서 해야함
+					if(seat[seatNum]==0) {
+						for(int i=0; i<people;i++) { //i = 0부터 해서 자리 수 오른쪽으로 증가해서 앉히게
+							seat[seatNum-1+i]=2;
+						}
+
+					}else if(seat[seatNum]==2) {
+						for(int i=0; i<people;i++) {
+							|System.out.println("이미 예매");
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 16:21:55.294
+!MESSAGE AbortCompilation computing hover information in StringIntTest.java at offset 157
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11610)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:12005)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11946)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10333)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1424)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:794)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:712)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:704)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 9 :
+-----
+package example;
+
+import java.util.Arrays;
+
+public class StringIntTest {
+
+	public static void main(String[] args) {
+		int[] seat = new int[7];//좌석
+		|String stat = (String)seat;
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 16:43:44.357
+!MESSAGE AbortCompilation computing hover information in StringIntTest.java at offset 198
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11610)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:12005)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11946)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10333)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1424)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:794)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:712)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:704)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 10 :
+-----
+package example;
+
+import java.util.Arrays;
+
+public class StringIntTest {
+
+	public static void main(String[] args) {
+		int[] seat = new int[7];//좌석
+		for(int i = 0; i<seat.length; i++) {
+			|System.out.print("[]");
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 17:35:29.950
+!MESSAGE AbortCompilation computing hover information in ArrMovie.java at offset 1308
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11610)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:12005)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11946)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10333)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1424)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:794)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:712)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:704)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 54 :
+-----
+				people = scan.nextInt();
+				cut = people;
+				for(int i = 0; i<seat.length; i++) { //예약 불가한 자리 없애는 곳 
+					if(seat[i]==1) {
+						seat[i] = 0;
+					}
+				}
+				System.out.println(cut);
+				
+				System.out.println("좌석 번호를 입력하세요 (1~10)");
+				seatNum = scan.|nextInt();
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 17:54:16.289
+!MESSAGE AbortCompilation computing hover information in ArrMovie.java at offset 1966
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11610)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:12005)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11946)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10333)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1424)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:794)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:712)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:704)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 80 :
+-----
+					if(seat[seatNum-1] !=2 ) { //좌석선택이 아직 예매가능한 자리일 경우
+						if(cut >= 2) {
+							for(int i=0; i<people;i++) { //i = 0부터 해서 자리 수 오른쪽으로 증가해서 앉히게하는데, 
+								
+
+
+							}
+						}
+			
+					}else {
+						|System.out.println("예매가 완료된 자리가 있습니다 확인해주세요.");
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 17:59:41.175
+!MESSAGE AbortCompilation computing hover information in ArrMovie.java at offset 1974
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11610)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:12005)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11946)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10333)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1424)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:794)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:712)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:704)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 76 :
+-----
+					
+				}else if(people>0 && seatNum>0) {  	// 인원수 지정, 좌석 선택 하면 
+												   	//그럼 이미 예매됐다는 예외처리도 이 안에서 해야함
+					if(seat[seatNum-1] !=2 ) { //좌석선택이 아직 예매가능한 자리일 경우
+						if(people >= 2) {
+							for(int i=0; i<people;i++) { //i = 0부터 해서 자리 수 오른쪽으로 증가해서 앉히게하는데, 
+								seat[seatNum-1+i]=2;
+
+						}
+							cut -= 2;
+							|System.out.println("머릿수::"+cut);
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 18:03:08.604
+!MESSAGE AbortCompilation computing hover information in ArrMovie.java at offset 1962
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: 
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11610)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:12005)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.parse(Parser.java:11946)
+	at org.eclipse.jdt.internal.compiler.parser.Parser.dietParse(Parser.java:10333)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.parse(CompilationUnitResolver.java:656)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1424)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.createAST(CoreJavadocContentAccessUtility.java:350)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocContentAccessUtility.getJavadocNode(CoreJavadocContentAccessUtility.java:318)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.javadoc2HTML(CoreJavadocAccess.java:423)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContentFromSource(CoreJavadocAccess.java:372)
+	at org.eclipse.jdt.core.manipulation.internal.javadoc.CoreJavadocAccess.getHTMLContent(CoreJavadocAccess.java:229)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:49)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:794)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:712)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:704)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 75 :
+-----
+					}
+					
+				}else if(people>0 && seatNum>0) {  	// 인원수 지정, 좌석 선택 하면 
+												   	//그럼 이미 예매됐다는 예외처리도 이 안에서 해야함
+					if(seat[seatNum-1] !=2 ) { //좌석선택이 아직 예매가능한 자리일 경우
+						if(쳣 >= 2) {
+							for(int i=0; i<2;i++) { //i = 0부터 해서 자리 수 오른쪽으로 증가해서 앉히게하는데, 
+								seat[seatNum-1+i]=2;
+						}
+							cut -= 2;
+							|System.out.println("남은"+ cut + "좌석을 선택해주세요: ");
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
+
+!ENTRY org.eclipse.jdt.core 4 4 2026-01-02 18:07:13.780
+!MESSAGE Exception occurred during problem detection:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package example;
+
+import java.util.*;
+
+public class ArrMovie {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int[] seat = new int[10];//좌석
+		
+		int select = 0;//선택
+		int people = 0;//머릿수
+		int seatNum = 0; //좌석 번호 
+		int count = 0;
+		
+		int cut = 0;
+		
+		boolean run = true;//프로그램 종료여부
+		
+		while(run == true) {
+			
+			for(int k =0; k<seat.length; k++) {
+				if(seat[k]==0) {
+					System.out.print("[ ]");
+				}else if(seat[k] ==1) {
+					System.out.print("[🚫]");
+				}else if(seat[k] ==2) {
+					System.out.print("[✔️]");
+				}
+			}
+			System.out.println("\n==그린 영화관==");
+			System.out.println("1.좌석예매");
+			System.out.println("2.종료");
+			System.out.print("입력 >>");	
+			select = scan.nextInt();
+			if(select == 2) { //프로그램 종료 메뉴 선택 시
+				System.out.println("프로그램이 종료됩니다.");
+				System.out.println("총 매출 : "+count*12000+"원");
+				run = false; // while 문 종료
+				
+			}else if(select == 1) {//좌석 예매 선택 시
+				
+				System.out.print("예매 인원을 입력하세요 (1~10) >> ");
+				people = scan.nextInt();
+				cut = people;
+				for(int i = 0; i<seat.length; i++) { //예약 불가한 자리 없애는 곳 
+					if(seat[i]==1) {
+						seat[i] = 0;
+					}
+				}
+				System.out.println("머릿수"+cut);
+				
+				System.out.print("좌석 번호를 입력하세요 (1~10) >> ");
+				seatNum = scan.nextInt();
+				
+				if(people == 1 && seatNum%2==0) { //혼자서 짝수 자리 선택 시
+					System.out.println("혼자서는 짝수 자리 예매가 불가능합니다.");
+					seat[1] = 1; //  예약 불가 처리 
+					for(int o =1; o<=seat.length; o++) {
+						if(o%2==0) {
+							seat[o-1] = 1;
+						}else if(seat[o] == 1) {
+								seat[o] = 0;
+							}
+					}
+					
+				}else if(people>0 && seatNum>0) {  	// 인원수 지정, 좌석 선택 하면 
+												   	//그럼 이미 예매됐다는 예외처리도 이 안에서 해야함
+					if(seat[seatNum-1] !=2 ) { //좌석선택이 아직 예매가능한 자리일 경우
+						if(cut >= 2) {
+							for(int i=0; i<2;i++) { //i = 0부터 해서 자리 수 오른쪽으로 증가해서 앉히게하는데, 
+								seat[seatNum-1+i]=2;
+						}
+							cut -= 2;
+							System.out.println("남은 "+ cut + " 좌석을 선택해주세요: ");
+						}else if(cut ==1) {
+							for(int i=0; i<1;i++) { //i = 0부터 해서 자리 수 오른쪽으로 증가해서 앉히게하는데, 
+								seat[seatNum-1+i]=2;
+							cut = 0;
+							if(cut == 0) {
+								System.out.println("좌석 선택이 완료 되었습니다.");
+							}else {
+								System.out.println("남은 1개 좌석을 선택해주세요.");
+								for(int j=0; <1;i++) { //i = 0부터 해서 자리 수 오른쪽으로 증가해서 앉히게하는데, 
+									seat[seatNum-1+i]=2;
+								cut = 0;
+							}
+							
+							}
+						}
+						
+						
+					}else {
+						System.out.println("예매가 완료된 자리가 있습니다 확인해주세요.");
+						}
+					
+				}else {
+				System.out.println("1번과 2번 중 입력해주세요.");
+				}	
+			
+			}
+		}
+	}
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.compiler.impl.Constant.booleanValue(Constant.java:27)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.doesNotCompleteNormally(ForStatement.java:480)
+	at org.eclipse.jdt.internal.compiler.ast.Block.doesNotCompleteNormally(Block.java:183)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.bindingsWhenComplete(IfStatement.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:700)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:446)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.WhileStatement.resolve(WhileStatement.java:293)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:373)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:624)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1461)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1612)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:661)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:975)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:301)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:276)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:571)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1257)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:182)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:108)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:751)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:816)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1431)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundWorker.run(AbstractReconciler.java:201)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2026-01-02 18:07:13.781
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 1
+Java Model Exception: org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:353)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:276)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:571)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1257)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:182)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:108)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:751)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:816)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1431)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundWorker.run(AbstractReconciler.java:201)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.compiler.impl.Constant.booleanValue(Constant.java:27)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.doesNotCompleteNormally(ForStatement.java:480)
+	at org.eclipse.jdt.internal.compiler.ast.Block.doesNotCompleteNormally(Block.java:183)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.bindingsWhenComplete(IfStatement.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:700)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:446)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.WhileStatement.resolve(WhileStatement.java:293)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:373)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:624)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1461)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1612)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:661)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:975)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:301)
+	... 19 more
+Caused by: org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.compiler.impl.Constant.booleanValue(Constant.java:27)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.doesNotCompleteNormally(ForStatement.java:480)
+	at org.eclipse.jdt.internal.compiler.ast.Block.doesNotCompleteNormally(Block.java:183)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.bindingsWhenComplete(IfStatement.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:700)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:446)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.WhileStatement.resolve(WhileStatement.java:293)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:373)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:624)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1461)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1612)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:661)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:975)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:301)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:276)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:571)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1257)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:182)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:108)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:751)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:816)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1431)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundWorker.run(AbstractReconciler.java:201)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2026-01-02 18:07:13.781
+!MESSAGE int constant cannot be casted into boolean
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.compiler.impl.Constant.booleanValue(Constant.java:27)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.doesNotCompleteNormally(ForStatement.java:480)
+	at org.eclipse.jdt.internal.compiler.ast.Block.doesNotCompleteNormally(Block.java:183)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.bindingsWhenComplete(IfStatement.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:700)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:446)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.WhileStatement.resolve(WhileStatement.java:293)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:373)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:624)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1461)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1612)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:661)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:975)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:301)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:276)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:571)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1257)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:182)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:108)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:751)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:816)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1431)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundWorker.run(AbstractReconciler.java:201)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2026-01-02 18:07:13.781
+!MESSAGE int constant cannot be casted into boolean
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.compiler.impl.Constant.booleanValue(Constant.java:27)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.doesNotCompleteNormally(ForStatement.java:480)
+	at org.eclipse.jdt.internal.compiler.ast.Block.doesNotCompleteNormally(Block.java:183)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.bindingsWhenComplete(IfStatement.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:700)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:446)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.WhileStatement.resolve(WhileStatement.java:293)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:373)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:624)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1461)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1612)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:661)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:975)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:301)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:276)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:571)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1257)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:182)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:108)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:751)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:816)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1431)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundWorker.run(AbstractReconciler.java:201)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2026-01-02 18:07:13.781
+!MESSAGE Error in JDT Core during reconcile
+!STACK 1
+Java Model Exception: org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:353)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:276)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:571)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1257)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:182)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:108)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:751)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:816)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1431)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundWorker.run(AbstractReconciler.java:201)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.compiler.impl.Constant.booleanValue(Constant.java:27)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.doesNotCompleteNormally(ForStatement.java:480)
+	at org.eclipse.jdt.internal.compiler.ast.Block.doesNotCompleteNormally(Block.java:183)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.bindingsWhenComplete(IfStatement.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:700)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:446)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.WhileStatement.resolve(WhileStatement.java:293)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:373)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:624)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1461)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1612)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:661)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:975)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:301)
+	... 19 more
+Caused by: org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.compiler.impl.Constant.booleanValue(Constant.java:27)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.doesNotCompleteNormally(ForStatement.java:480)
+	at org.eclipse.jdt.internal.compiler.ast.Block.doesNotCompleteNormally(Block.java:183)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.bindingsWhenComplete(IfStatement.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:700)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:446)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.WhileStatement.resolve(WhileStatement.java:293)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:373)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:624)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1461)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1612)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:661)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:975)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:301)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:276)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:571)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1257)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:182)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:108)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:751)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:816)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1431)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundWorker.run(AbstractReconciler.java:201)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2026-01-02 18:07:13.782
+!MESSAGE int constant cannot be casted into boolean
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.compiler.impl.Constant.booleanValue(Constant.java:27)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.doesNotCompleteNormally(ForStatement.java:480)
+	at org.eclipse.jdt.internal.compiler.ast.Block.doesNotCompleteNormally(Block.java:183)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.bindingsWhenComplete(IfStatement.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:700)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:446)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.WhileStatement.resolve(WhileStatement.java:293)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:373)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:624)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1461)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1612)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:661)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:975)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:301)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:276)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:250)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:571)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1257)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:182)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:108)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:751)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:816)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1431)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundWorker.run(AbstractReconciler.java:201)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 2 2026-01-02 18:07:13.786
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.core.manipulation".
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.compiler.impl.Constant.booleanValue(Constant.java:27)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.doesNotCompleteNormally(ForStatement.java:480)
+	at org.eclipse.jdt.internal.compiler.ast.Block.doesNotCompleteNormally(Block.java:183)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.bindingsWhenComplete(IfStatement.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:700)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:446)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.WhileStatement.resolve(WhileStatement.java:293)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:373)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:624)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1461)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1612)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:661)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:1310)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:830)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1405)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:189)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:167)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.lambda$0(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.internal.core.JavaModelManager.callReadOnly(JavaModelManager.java:5698)
+	at org.eclipse.jdt.core.JavaCore.callReadOnly(JavaCore.java:6186)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2026-01-02 18:07:13.786
+!MESSAGE Error in JDT Core during AST creation
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.ShouldNotImplement: int constant cannot be casted into boolean
+	at org.eclipse.jdt.internal.compiler.impl.Constant.booleanValue(Constant.java:27)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.doesNotCompleteNormally(ForStatement.java:480)
+	at org.eclipse.jdt.internal.compiler.ast.Block.doesNotCompleteNormally(Block.java:183)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.bindingsWhenComplete(IfStatement.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:700)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:446)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:316)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:319)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:143)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.WhileStatement.resolve(WhileStatement.java:293)
+	at org.eclipse.jdt.internal.compiler.ast.Statement.resolveWithBindings(Statement.java:523)
+	at org.eclipse.jdt.internal.compiler.ast.ASTNode.resolveStatements(ASTNode.java:699)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:725)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:373)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:624)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1461)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1612)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:661)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:1310)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.resolve(CompilationUnitResolver.java:830)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:1405)
+	at org.eclipse.jdt.core.dom.CompilationUnitResolver$ECJCompilationUnitResolver.toCompilationUnit(CompilationUnitResolver.java:109)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateASTCached(ASTParser.java:1410)
+	at org.eclipse.jdt.core.dom.ASTParser.lambda$1(ASTParser.java:1289)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:1289)
+	at org.eclipse.jdt.core.dom.ASTParser.createAST(ASTParser.java:933)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider$1.run(CoreASTProvider.java:294)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.createAST(CoreASTProvider.java:286)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:199)
+	at org.eclipse.jdt.core.manipulation.CoreASTProvider.getAST(CoreASTProvider.java:189)
+	at org.eclipse.jdt.core.manipulation.SharedASTProviderCore.getAST(SharedASTProviderCore.java:138)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:167)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.lambda$0(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.jdt.internal.core.JavaModelManager.cacheZipFiles(JavaModelManager.java:5709)
+	at org.eclipse.jdt.internal.core.JavaModelManager.callReadOnly(JavaModelManager.java:5698)
+	at org.eclipse.jdt.core.JavaCore.callReadOnly(JavaCore.java:6186)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$1.run(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-01-02 18:07:36.823 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 18:07:39.033
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-02 18:07:43.138
+!MESSAGE Logback config file: C:\JavaClass\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-01-02 18:07:49.218
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2026-01-02 18:07:51.187
+!MESSAGE No proxy data found for url: https://live.codetogether.io/ct-url
