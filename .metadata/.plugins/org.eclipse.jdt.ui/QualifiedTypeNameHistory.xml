@@ -10,6 +10,6 @@
     <fullyQualifiedTypeName name="classpart.Bicycle"/>
     <fullyQualifiedTypeName name="methodClass.ReturnClass"/>
     <fullyQualifiedTypeName name="methodClass.Return02"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="jdk.vm.ci.code.site.Infopoint"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
