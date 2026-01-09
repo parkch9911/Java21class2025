@@ -11,5 +11,9 @@
     <fullyQualifiedTypeName name="methodClass.ReturnClass"/>
     <fullyQualifiedTypeName name="methodClass.Return02"/>
     <fullyQualifiedTypeName name="jdk.vm.ci.code.site.Infopoint"/>
+    <fullyQualifiedTypeName name="arrayListEx01.Product"/>
+    <fullyQualifiedTypeName name="arrayListEx02.Subject"/>
+    <fullyQualifiedTypeName name="jdk.internal.loader.AbstractClassLoaderValue.Sub"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
