@@ -5,7 +5,6 @@
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
     <fullyQualifiedTypeName name="classpart.Student"/>
     <fullyQualifiedTypeName name="classpart.Bicycle"/>
     <fullyQualifiedTypeName name="methodClass.ReturnClass"/>
@@ -14,6 +13,21 @@
     <fullyQualifiedTypeName name="arrayListEx01.Product"/>
     <fullyQualifiedTypeName name="arrayListEx02.Subject"/>
     <fullyQualifiedTypeName name="jdk.internal.loader.AbstractClassLoaderValue.Sub"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.text.NumberFormat"/>
+    <fullyQualifiedTypeName name="bookshop.BookList"/>
+    <fullyQualifiedTypeName name="bookshop.BookDTO"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="sun.java2d.pipe.SpanShapeRenderer.Simple"/>
+    <fullyQualifiedTypeName name="bookshop.TcBookList"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="staticEx.StaticEx01"/>
+    <fullyQualifiedTypeName name="privateEx.PrivateTest"/>
+    <fullyQualifiedTypeName name="BookMax.PrivateBook"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="BookMax.BookInfo"/>
+    <fullyQualifiedTypeName name="java.awt.print.Book"/>
+    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
+    <fullyQualifiedTypeName name="sun.management.BaseOperatingSystemImpl"/>
 </qualifiedTypeNameHistroy>
