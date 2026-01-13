@@ -40,7 +40,7 @@ public class BookInfo {
 	public void setPrice(int price) {
 		this.price = price;
 	};
-	
+	// 출력문
 	public void showBook() {
 		System.out.printf("%s %s %s%n",Booktitle,Author,price);
 	}

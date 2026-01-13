@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class PrivateBook {
 	//멤버변수
 	ArrayList<BookInfo> bookp;
+	
+	
 	public PrivateBook() {
 		bookp = new ArrayList<BookInfo>();
 	}
@@ -35,6 +37,4 @@ public class PrivateBook {
 			System.out.println(bookp.get(cnt).getBooktitle()+bookp.get(cnt).getAuthor()+ bookp.get(cnt).getPrice());
 		}
 
-		
-		
 }

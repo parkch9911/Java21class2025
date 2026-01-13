@@ -1,0 +1,53 @@
+package shopMall;
+
+import java.util.ArrayList;
+
+public class ItemManager {
+	
+	// 카테고리를 String 자료형으로 ArrayList생성
+	ArrayList<String> category = new ArrayList<String>();
+	// 전체 아이템리스트를  Item 자료형으로 ArrayList생성
+	ArrayList<Item> itemList = new ArrayList<Item>();
+	
+	public ItemManager() {
+		category.add(new String("과자"));
+		category.add(new String("생선"));
+		category.add(new String("육류"));
+		category.add(new String("음료수"));
+		itemList.add(new Item(0,"과자",1000,"새우깡"));
+		itemList.add(new Item(1,"생선",2000,"고등어"));
+		itemList.add(new Item(0,"과자",3600,"칸쵸"));
+		itemList.add(new Item(2,"육류",6500,"소고기"));
+		itemList.add(new Item(2,"육류",5500,"돼지고기"));
+		itemList.add(new Item(3,"음료수",1300,"콜라"));
+		itemList.add(new Item(3,"음료수",1200,"사이다"));
+		itemList.add(new Item(1,"생선",1800,"새우"));
+	}
+	
+	// 카테고리 추가 및 item 추가 메서드
+	public void info() {
+		
+	}
+	
+	// 카테고리 출력 메서드
+	public void printCategory() {
+		System.out.println("==========");
+		for(int i = 0;i<category.size(); i++) {
+			System.out.println("["+i+"]["+category.get(i)+"]");
+		}
+		System.out.println("[0]뒤로가기 ");
+		System.out.print("쇼핑목록 선택 >> ");
+	}
+	
+	//item 목록 출력 메서드 
+	public void printItemList(int sel) {
+			for(int i = 0;i<itemList.size(); i++) { //sel이랑 카테고리의 index번호랑 같으면 출력인데
+				if(sel == itemList.get(i).cateNum ) {
+					System.out.println("["+i+"]["+itemList.get(i).name+"]["+itemList.get(i).price+"]["+itemList.get(i).category+"]");
+				}	
+			}
+			System.out.println("[0]뒤로가기 ");
+			System.out.print("항목 선택 >> ");
+			
+		}
+	}

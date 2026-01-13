@@ -21,13 +21,14 @@
     <fullyQualifiedTypeName name="bookshop.TcBookList"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="staticEx.StaticEx01"/>
     <fullyQualifiedTypeName name="privateEx.PrivateTest"/>
     <fullyQualifiedTypeName name="BookMax.PrivateBook"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="BookMax.BookInfo"/>
     <fullyQualifiedTypeName name="java.awt.print.Book"/>
     <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
     <fullyQualifiedTypeName name="sun.management.BaseOperatingSystemImpl"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="inheritance03.VIPcustomer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
