@@ -25,7 +25,7 @@ public class ItemManager {
 	}
 	
 	// 카테고리 추가 및 item 추가 메서드
-	public void info() {
+	public void info() { //이건 관리자용 메서드인가
 		
 	}
 	
@@ -35,7 +35,7 @@ public class ItemManager {
 		for(int i = 0;i<category.size(); i++) {
 			System.out.println("["+i+"]["+category.get(i)+"]");
 		}
-		System.out.println("[0]뒤로가기 ");
+		System.out.println("[-1]뒤로가기 ");
 		System.out.print("쇼핑목록 선택 >> ");
 	}
 	
@@ -43,10 +43,12 @@ public class ItemManager {
 	public void printItemList(int sel) {
 			for(int i = 0;i<itemList.size(); i++) { //sel이랑 카테고리의 index번호랑 같으면 출력인데
 				if(sel == itemList.get(i).cateNum ) {
-					System.out.println("["+i+"]["+itemList.get(i).name+"]["+itemList.get(i).price+"]["+itemList.get(i).category+"]");
+					Item item = new Item(sel,itemList.get(i).name,itemList.get(i).price,itemList.get(i).category);
+					System.out.print("["+i+"]"); //출력
+					item.printInfo();
 				}	
 			}
-			System.out.println("[0]뒤로가기 ");
+			System.out.println("[-1]뒤로가기 ");
 			System.out.print("항목 선택 >> ");
 			
 		}

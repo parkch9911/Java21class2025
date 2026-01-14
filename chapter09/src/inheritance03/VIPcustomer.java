@@ -5,15 +5,15 @@ public class VIPcustomer extends Customer {
 	int personalCall;
 	
 	public VIPcustomer() {};
-	public VIPcustomer(String customerID, String customerName) {
+	public VIPcustomer(String customerID, String customerName,int personalCall) {
 		//super(customerID,customerName);
 		super.customerName =customerName;
 		super.customerID =customerID;
 		super.bonusRatio = 5; //적립비
 		super.customerGrade ="VIP"; //등급
 		this.discount = 10; //할인비
-		this.personalCall = 1010; //상담번호
-		super.customer(10000);
+		this.personalCall = personalCall;
+		
 	};
 	
 	public int calcPrice(int price){
@@ -25,7 +25,7 @@ public class VIPcustomer extends Customer {
 	@Override
 	public void printP() {
 		super.printP();
-		System.out.println("전문 상담 번호는 "+personalCall+"번 입니다.");
+		System.out.println("VIP 고객 전문 상담 번호는 "+personalCall+"번 입니다.");
 	}	
 	
 }

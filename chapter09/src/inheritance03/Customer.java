@@ -42,8 +42,11 @@ public class Customer {
 		// 누적적립금액
 	}
 	
+	public void printINFO() {
+		System.out.println(customerName+"님의 등급은 "+customerGrade+"이며, 보너스 포인트는 "+ customer(0)+"원 입니다.");
+	}
 	public void printP() {
-		System.out.println("지불 금액은 "+ calcPrice(10000)+"원이고, "+customerName+"님의 등급은 "+customerGrade
+		System.out.println(customerName+"님의 지불 금액은 "+ calcPrice(10000)+"원이고, 회원등급은 "+customerGrade
 				+"이며, 보너스 포인트는 "+ customer(10000)+"원 입니다.");
 	}
 }

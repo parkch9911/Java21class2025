@@ -49,19 +49,19 @@ public class Shopping extends UserMenu {
 					while(categoryRun) {	
 						itemManager.printCategory(); //카테고리 출력
 						sel = scan.nextInt(); //카테고리 선택
-						itemManager.printItemList(sel);
+						itemManager.printItemList(sel); //상품출력 ex)[0][과자][1000][새우깡] ...
 						sel = scan.nextInt();
-						if(sel == 0) {
+						if(sel == -1) { 
 							System.out.println("뒤로가기");
 							categoryRun = false;
-						}if(sel != 0) {
+						}if(sel != -1) {
 							//sel값 받아서 일치하는거 장바구니에 추가하기
-							
+							categoryRun = false;
 						}
 					}
 				}else if(sel == 2) {
 					//여긴 장바구니 목록 출력하는 메서드 불러오기
-				}else if(sel == 0) {
+				}else if(sel == -1) {
 					System.out.println("뒤로가기");
 					shoppingRun = false;
 				}
