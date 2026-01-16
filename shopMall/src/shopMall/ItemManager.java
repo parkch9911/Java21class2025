@@ -29,6 +29,26 @@ public class ItemManager {
 		
 	}
 	
+	//관리자 상품 추가 메서드
+	public void managerAddItem(int NewCateNum,String NewCateName,int NewItemPrice,String NewItemName) {
+		itemList.add(new Item(NewCateNum,NewCateName,NewItemPrice,NewItemName));
+	}
+	
+	//관리자 상품 삭제 메서드
+	public void managerRemoveItem(int DelItemIdx) {
+		itemList.remove(DelItemIdx);
+	}
+	
+	//관리자 상품 수정 메서드  해당 인덱스 삭제하고 추가하기
+	public void managerModifyItem(int NewCateNum,String NewCateName,int NewItemPrice,String NewItemName,int DelItemIdx) {
+		itemList.remove(DelItemIdx);
+		itemList.add(new Item(NewCateNum,NewCateName,NewItemPrice,NewItemName));
+	}
+	
+	
+	
+	
+	
 	// 카테고리 출력 메서드
 	public void printCategory() {
 		System.out.println("==========");
@@ -38,6 +58,15 @@ public class ItemManager {
 		System.out.println("[-1]뒤로가기 ");
 		System.out.print("쇼핑목록 선택 >> ");
 	}
+	
+	//이건 모든 아이템 출력 //관리자가 보는용
+	public void printItemList() {
+		for(int i = 0;i<itemList.size(); i++) {
+				Item item = new Item(i, itemList.get(i).name,itemList.get(i).price,itemList.get(i).category);
+				System.out.print("["+i+"]"); //출력
+				item.printInfo();
+			}	
+		}
 	
 	//item 목록 출력 메서드 
 	public void printItemList(int sel) {

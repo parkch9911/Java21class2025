@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 
 public class Shopping extends UserMenu {
-	
 	ItemManager itemManager = new ItemManager();
+	Cart cart = new Cart();
+	CartArray cartarray = new CartArray();
 	public Shopping() {};
 	boolean run = true;
 	boolean shoppingRun = true;
@@ -15,22 +16,95 @@ public class Shopping extends UserMenu {
 	public void menu() {
 		while(run) {
 			shoppingRun = true;
-			System.out.println("[1]로그인");
-			System.out.println("[2]로그아웃");
-			System.out.println("[3]쇼핑");
-			System.out.println("[0]종료");
-			System.out.print("메뉴를 선택하세요 >> ");
-			int sel = scan.nextInt();
-			if(sel == 1) {
-				login();		
-			}else if(sel ==2) {
-				logout();
-			}else if(sel ==3) {
-				shopMenu();
-			}else if(sel ==0) {
-				System.out.println("종료되었습니다.");
-				run = false;
+			if(super.log != -2) { //일반 회원으로 로그인했다면
+				System.out.println("[1]로그인");
+				System.out.println("[2]로그아웃");
+				System.out.println("[3]쇼핑");
+				System.out.println("[0]종료");
+				System.out.print("메뉴를 선택하세요 >> ");
+				int sel = scan.nextInt();
+				if(sel == 1) {
+					login();		
+				}else if(sel ==2) {
+					logout();
+				}else if(sel ==3) {
+					shopMenu();
+				}else if(sel ==0) {
+					System.out.println("종료되었습니다.");
+					run = false;
+				}
+			}else { //관리자로 로그인했다면
+				System.out.println("\n[1]로그아웃");
+				System.out.println("[2]아이템관리");
+				System.out.println("[3]장바구니 리스트");
+				System.out.print("메뉴를 선택하세요 >> ");
+				int sel = scan.nextInt();
+				if(sel == 1) {
+					logout();
+				}else if(sel ==2) {   // 아이템 관리 시작
+					System.out.println("[1]상품 추가");
+					System.out.println("[2]상품 삭제");
+					System.out.println("[3]상품 수정");
+					System.out.println("[0]종료");
+					System.out.print("메뉴를 선택하세요 >> ");
+					sel = scan.nextInt();
+					if(sel ==1) {  //관리자가 상품 추가 선택===================================
+					String cateString = "";
+						System.out.print("추가할 상품 이름을 입력하세요 >> ");
+							String newItemName = scan.next();
+						System.out.print("추가할 상품 가격을 입력하세요 >> ");
+							int newItemPrice = scan.nextInt();
+						System.out.println("추가할 상품의 카테고리 번호를 입력하세요. ");
+						System.out.println("[0]과자 [1]생선 [2]육류 [3]음료수 ");
+						System.out.print("입력 >> ");
+							int newItemCategory = scan.nextInt();
+							if(newItemCategory == 0) { //카테고리 넘버랑 String 매칭시키기
+								cateString = "과자";
+							}else if(newItemCategory == 1) {
+								cateString = "생선";
+							}else if(newItemCategory == 2) {
+								cateString = "육류";
+							}else if(newItemCategory == 3) {
+								cateString = "음료수";
+							};
+							itemManager.managerAddItem(newItemCategory,cateString,newItemPrice,newItemName);//관리자 아이템추가 끝
+						
+					}else if(sel==2) {	//관리자가 상품삭제 선택=====================================
+						itemManager.printItemList();
+						System.out.print("삭제할 상품의 번호를 입력하세요 >> ");
+						sel = scan.nextInt();
+						itemManager.managerRemoveItem(sel);
+					}else if(sel ==3) { //관리자가 상품수정 선택====================================
+						itemManager.printItemList();
+						System.out.print("수정할 상품의 번호를 입력하세요 >> ");
+							sel = scan.nextInt();
+						System.out.print("수정할 상품의 이름를 입력하세요 >> ");
+							String ModItemName = scan.next();
+						System.out.print("수정할 상품의 금액를 입력하세요 >> ");
+							int ModItemPrice = scan.nextInt();
+						System.out.println("수정할 상품의 카테고리 번호를 입력하세요. ");
+						System.out.println("[0]과자 [1]생선 [2]육류 [3]음료수 ");
+						System.out.print("입력 >> ");
+							int ModItemCategory = scan.nextInt();
+							String ModItemCateName = ""; //카테고리 넘버랑 String 매칭시키기
+							if(ModItemCategory == 0) {
+								ModItemCateName = "과자";
+							}else if(ModItemCategory == 1) {
+								ModItemCateName = "생선";
+							}else if(ModItemCategory == 2) {
+								ModItemCateName = "육류";
+							}else if(ModItemCategory == 3) {
+								ModItemCateName = "음료수";
+							};
+						itemManager.managerModifyItem(sel,ModItemName,ModItemPrice,ModItemCateName,sel);
+						//관리자의 전체 아이템 관리 끝
+					}
+					
+				}else if(sel ==3) { // 관리자 장바구니 리스트 확인하기 ===========
+					
+				}
 			}
+			
 		}
 	};
 	//쇼핑메뉴
@@ -41,26 +115,31 @@ public class Shopping extends UserMenu {
 				System.out.println("===========");
 				System.out.println("[1]쇼핑목록");
 				System.out.println("[2]장바구니");
-				System.out.println("[0]뒤로가기");
+				System.out.println("[-1]뒤로가기");
 				System.out.print("메뉴를 선택하세요 >> ");
 				int sel = scan.nextInt();
-				if(sel == 1) {
-					//
+				if(sel == 1) { //쇼핑 목록 확인하기
 					while(categoryRun) {	
 						itemManager.printCategory(); //카테고리 출력
-						sel = scan.nextInt(); //카테고리 선택
+						sel = scan.nextInt(); //카테고리 선택 
+						
 						itemManager.printItemList(sel); //상품출력 ex)[0][과자][1000][새우깡] ...
 						sel = scan.nextInt();
 						if(sel == -1) { 
 							System.out.println("뒤로가기");
 							categoryRun = false;
-						}if(sel != -1) {
+						}if(sel != -1) {//뒤로가기가 아니라 항목 선택
+							cartarray.AddCart(log,"아이템이름",999,1);
 							//sel값 받아서 일치하는거 장바구니에 추가하기
 							categoryRun = false;
 						}
 					}
 				}else if(sel == 2) {
 					//여긴 장바구니 목록 출력하는 메서드 불러오기
+					
+					
+					
+					
 				}else if(sel == -1) {
 					System.out.println("뒤로가기");
 					shoppingRun = false;
@@ -73,27 +152,23 @@ public class Shopping extends UserMenu {
 	};
 	//로그인 메서드
 	public void login() {
-			int testing = -1;
-			int who = -1;
 			System.out.print("아이디를 입력하세요 >> ");
 			String inputid = scan.next();
 			System.out.print("비밀번호를 입력하세요 >> ");
 			String inputpw = scan.next();
 			for(int i = 0; i<super.id.length; i++) {
 				if(super.id[i].equals(inputid) && super.pw[i].equals(inputpw)) {
-					testing = 1;
-					super.log = 1;
-					who = i;
+					super.log = i;
 				}else if(inputid.equals("mmm") && inputpw.equals("123")) {
-					testing = 2;
-					super.log = 2;
+					super.log = -2;
 				}
 			}
-			if(testing == 1) {
-				System.out.println("["+super.id[who]+"]님, 환영합니다.");
-				super.userLog(who);
-			}else if(testing == 2){
-				System.out.println("당신은 관리자입니다.");
+			if(super.log != -2 && super.log != -1) {
+				System.out.println("\n["+super.id[super.log]+"]님, 환영합니다.\n");
+				super.userLog(log);
+			}else if(super.log == -2){
+				System.out.println("\n당신은 관리자입니다.\n");
+				super.userLog(log);
 			}else {
 				System.out.println("아이디와 비밀번호를 다시 확인해주세요.");
 			}
