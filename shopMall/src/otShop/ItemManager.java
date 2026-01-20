@@ -92,7 +92,7 @@ public class ItemManager {
 					temp.itemName = itemList.get(i).name;
 					temp.price = itemList.get(i).price;
 					cnt += 1 ;
-					temp.quantity = cnt; //이게맞나
+					temp.quantity = cnt;
 					//장바구니 추가
 					jangList.add(temp);
 				}

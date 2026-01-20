@@ -9,6 +9,7 @@
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="printCategory"/>
 			<item value="parse"/>
 			<item value="name"/>
 		</list>
